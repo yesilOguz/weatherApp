@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:background="#2C2C2C"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:text="Paris"
+                    android:textAlignment="center"
+                    android:textColor="#C3C3C3"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/currentCard"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="25dp"
+                    app:cardBackgroundColor="#7A7979"
+                    app:cardCornerRadius="30sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/icon"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/weatherText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="RAINY"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/recommendText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10sp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Unplug your electronic devices"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/staticText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Temp"
+                                    android:textColor="#C3C3C3" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/celsiusText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="15 "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/staticCelsiusText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:autoSizeTextType="uniform"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="°C"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/fahrenheitText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="15 "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/staticFahrenheitText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:autoSizeTextType="uniform"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="°F"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="55dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/staticText2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Real Feel"
+                                    android:textColor="#C3C3C3" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/realCelsiusText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="15 "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/staticCelsiusText3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:autoSizeTextType="uniform"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="°C"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/realFahrenheitText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="15 "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/staticFahrenheitText2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:autoSizeTextType="uniform"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="°F"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/staticText3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Humidty"
+                                    android:textColor="#C3C3C3" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/humidtyText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="15 "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/staticPercentageText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:autoSizeTextType="uniform"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="%"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/staticText5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Cloud"
+                                    android:textColor="#C3C3C3" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cloudText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="15 "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/staticPercentageText2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:autoSizeTextType="uniform"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="%"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="#7A7979"
+                    app:cardCornerRadius="30sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/staticText6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25sp"
+                                android:layout_marginRight="55sp"
+                                android:fontFamily="@font/andika_new_basic"
+                                android:text="Wind"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="#C3C3C3"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginRight="5sp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/staticText7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="1sp"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="Speed"
+                                        android:textAlignment="center"
+                                        android:textColor="#C3C3C3" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/mphText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="10.5"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/staticMphText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:autoSizeTextType="uniform"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="mph"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/kphText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="10.5"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/staticKphText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:autoSizeTextType="uniform"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="kph"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/staticText8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="Dir"
+                                        android:textAlignment="center"
+                                        android:textColor="#C3C3C3" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/degreeText"
+                                            android:layout_width="100dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="270"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="#C3C3C3" />
+
+                                        <TextView
+                                            android:id="@+id/degreeStaticText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="°"
+                                            android:textColor="#C3C3C3" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/directionText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="South"
+                                            android:textAlignment="center"
+                                            android:textColor="#C3C3C3" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="5sp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/staticText4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5sp"
+                                android:autoText="true"
+                                android:fontFamily="@font/andika_new_basic"
+                                android:text="Precipitation"
+                                android:textAlignment="center"
+                                android:textColor="#C3C3C3"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginRight="5sp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/precipitationMMText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="0.0 "
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/staticMMText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:autoSizeTextType="uniform"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="mm"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/precipitationInchText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="0.0"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/staticInchText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:autoSizeTextType="uniform"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="inch"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="5sp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/staticText9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5sp"
+                                android:fontFamily="@font/andika_new_basic"
+                                android:text="Air Quality"
+                                android:textAlignment="center"
+                                android:textColor="#C3C3C3"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/airQualityText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="BAD"
+                                    android:textAlignment="center"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/astronomyCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="#7A7979"
+                    app:cardCornerRadius="30sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/astronomyStaticText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/andika_new_basic"
+                            android:text="ASTRONOMY"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#C3C3C3"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/sunriseStaticText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="sunrise: "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/sunriseText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="07:54 PM"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/sunsetStaticText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="sunset: "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/sunsetText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="07:54 PM"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/moonriseStaticText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="moonrise: "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/moonriseText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="07:54 PM"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/moonsetStaticText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="moonset: "
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/moonsetText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/andika_new_basic"
+                                        android:text="07:54 PM"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#C3C3C3"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginRight="5dp"
+                            app:cardBackgroundColor="#7A7979"
+                            app:cardCornerRadius="30sp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/staticText10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="YESTERDAY"
+                                    android:textAlignment="center"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/weather_yesterday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Sunny"
+                                    android:textAlignment="center"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/maxTempStaticText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="MAX"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/maxC_yesterday"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="30.5 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/maxCStatic"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/maxF_yesterday"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="104.5 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/maxFStatic"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:layout_width="20dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/avgTempStaticText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="AVG"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/avgC_yesterday"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="128.1 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/avgCStatic"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/avgF_yesterday"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="15 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/avgFStatic"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:layout_width="20dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/minTempStaticText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="MIN"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/minC_yesterday"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="20.5"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/minCStatic"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/minF_yesterday"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="15 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/minFStatic"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="15dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/avgHumidityStatic"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="avg humidity: "
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/avgHumidity_yesterday"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="15"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/avgHumidityPercentStatic"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="%"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginRight="5dp"
+                            app:cardBackgroundColor="#7A7979"
+                            app:cardCornerRadius="30sp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/staticText12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="2 DAYS AGO"
+                                    android:textAlignment="center"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/weather_2day"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Cloudy"
+                                    android:textAlignment="center"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/maxTempStaticText1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="MAX"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/maxC_2day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="128.1 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/maxCStatic1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/maxF_2day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="102.9 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/maxFStatic1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:layout_width="20dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/avgTempStaticText1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="AVG"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/avgC_2day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="128.1 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/avgCStatic1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/avgF_2day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="12 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/avgFStatic1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:layout_width="20dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/minTempStaticText1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="MIN"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/minC_2day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="128.1 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/minCStatic1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/minF_2day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="15 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/minFStatic1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="15dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/avgHumidityStatic1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="avg humidity: "
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/avgHumidity_2day"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="15"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/avgHumidityPercentStatic1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="%"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginRight="5dp"
+                            app:cardBackgroundColor="#7A7979"
+                            app:cardCornerRadius="30sp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/staticText15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="3 DAYS AGO"
+                                    android:textAlignment="center"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/weather_3day"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/andika_new_basic"
+                                    android:text="Rainy"
+                                    android:textAlignment="center"
+                                    android:textColor="#C3C3C3"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/maxTempStaticText2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="MAX"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/maxC_3day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="128.1 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/maxCStatic2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/maxF_3day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="102.9 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/maxFStatic2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:layout_width="20dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/avgTempStaticText2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="AVG"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/avgC_3day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="128.1 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/avgCStatic2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/avgF_3day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="15 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/avgFStatic2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:layout_width="20dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/minTempStaticText2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="MIN"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/minC_3day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="128.1 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/minCStatic2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°C"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/minF_3day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="15 "
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/minFStatic2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/andika_new_basic"
+                                                android:text="°F"
+                                                android:textAlignment="viewStart"
+                                                android:textColor="#C3C3C3"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="15dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/avgHumidityStatic2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="avg humidity: "
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/avgHumidity_3day"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="15"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/avgHumidityPercentStatic2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/andika_new_basic"
+                                            android:text="%"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#C3C3C3"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
