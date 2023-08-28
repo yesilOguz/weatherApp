@@ -4,7 +4,7 @@ cookBook is an Android application aimed at sharing and viewing recipes.
 
 ## Images from app (pyhsical device)
 
-<img src="https://github.com/yesilOguz/cookBook/blob/main/imagesForREADME/main.jpg" width="180">
+<img src="https://github.com/yesilOguz/weatherApp/blob/main/imagesForREADME/main.jpg" width="180">
 
 ## Installation
 
