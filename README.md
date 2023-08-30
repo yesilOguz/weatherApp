@@ -1,6 +1,6 @@
-# cookBook
+# weatherApp
 
-cookBook is an Android application aimed at sharing and viewing recipes.
+weatherApp is an Android application that aims to show the weather.
 
 ## Images from app (pyhsical device)
 
